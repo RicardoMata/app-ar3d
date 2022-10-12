@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  font-family: "BreveSans";
+  overflow: hidden;
+}
+.interfacecontainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.backgroundclass {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.joycontainer {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: -5%;
+  overflow: hidden;
+  z-index: 3;
+  pointer-events:none; 
+}
+.joycontainer_walk {
+  position: relative;
+  top: 25%;
+  left: 1.5%;
+  object-fit: cover;
+  overflow: visible;
+  pointer-events:auto; 
+}
+.joycontainer_view {
+  position: absolute;
+  top: 25%;
+  right: 0%;
+  object-fit: cover;
+  overflow: visible;
+  pointer-events:auto; 
+}
+.topbarclass {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.textholderclass {
+  position: absolute;
+  width: 40%;
+  top: 8.5%;
+  left: 30%;
+}
+.textholdertext {
+  position: relative;
+  z-index: 2;
+  color: #000;
+  font-size: 3vw;
+  text-align: center;
+}
+.textholderclassbg {
+  position: absolute;
+  width: 40%;
+  top: 6%;
+  left: 30%;
+}
+.optionsbarclass {
+  position: absolute;
+  width: 56%;
+  top: 72%;
+  left: 22%;
+  object-fit: cover;
+  filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.25));
+}
+.variableselector {
+  position: absolute;
+  top: 76.8%;
+  width: 48%;
+  left: 26%;
+  z-index: 5;
+  font-size: 1.3vw;
+  text-align: center;
+  overflow: hidden;
+  vertical-align: middle;
+  height: fit-content;
+}
+nav li {
+  position: relative;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+}
+nav li a {
+  color: rgb(181, 181, 181);
+  display: block;
+  text-decoration: none;
+  padding: 0em 0em;
+  padding-top: 14%;
+}
+a:hover {
+  color: #000;
+}
+a:active {
+  color: #000;
+}
+@media screen and (min-width: 120px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.variantsselector {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  z-index: 1;
+  top: 23%;
+  overflow:visible;
+  height: fit-content;
+}
+.overflo{
+  width: 100%;
+}
+.itemclass, .itemclassover {
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+}
+.itemimage {
+  position: absolute;
+  width: 64%;
+  left: 18%;
+  top: 14%;
+}
+.varianttitle {
+  position: absolute;
+  text-align: center;
+  font-size: 1.1vw;
+  left: 19%;
+  top: 52%;
+  width: 64%;
+  font-family: "BreveSansBlack";
+}
+.variantdescription {
+  position: absolute;
+  white-space: pre-line;
+  font-size: 1.1vw;
+  left: 19%;
+  top: 60%;
+  width: 64%;
+  text-align: center;
+}
+.itemcont {
+  margin-bottom: 100%;
+  overflow: visible;
+}
+.itemcontover{
+  margin-bottom: 100%;
+  overflow: visible;
+  width: 50%;
+}
+.black, .chrome {
+  position: absolute;
+  height: 20%;
+  top: 95%;
+  transition-duration: 0.2s;
+  z-index: 3;
+}
+.black{
+  left: 55%;
+}
+.chrome{
+  left: 20%;
+}
+.black:active, .chrome:active {
+  transform: scale(1.2);
+}
+.escalerasClass{
+  position: absolute;
+  left: 48%;
+  height: 16%;
+  bottom: 16%;
+  opacity: 0.6;
+  pointer-events:auto;
+}
+.variantdescription2 {
+  position: absolute;
+  white-space: pre-line;
+  font-size: 1.1vw;
+  left: 10%;
+  top: 56%;
+  width: 80%;
+  text-align: center;
+}
+.varianttitle2 {
+  position: absolute;
+  text-align: center;
+  font-size: 1.1vw;
+  left: 19%;
+  top: 49%;
+  width: 64%;
+  font-family: "BreveSansBlack";
+}
+.show{
+  display: block;
+}
+.hide{
+  display: none;
+}
